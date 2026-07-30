@@ -87,3 +87,47 @@ footer {
         font-size: 1.7rem;
     }
 }
+/* ------------------------------
+   Navigation entre les pages
+------------------------------ */
+
+
+.navigation-pages {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 0 20px;
+
+}
+
+
+
+.navigation-pages a {
+
+    background-color: #1b4965;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+}
+
+
+
+.navigation-pages a:hover {
+
+    opacity: 0.8;
+
+}
