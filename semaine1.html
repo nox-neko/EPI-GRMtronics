@@ -1,12 +1,11 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="fr">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semaine 1 - Expérience en Italie</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 <header>
     <h1>
@@ -22,141 +21,149 @@
     </nav>
 </header>
 <main>
-<section>
-<h2>
-    Première mission : décodage des trames CAN
-</h2>
-<p>
-    Du 06/06/2026 au 23/06/2026, j'ai travaillé sur le décodage
-    des trames de communication de plusieurs boîtes de vitesses
-    automatiques.
-</p>
-<p>
-    Les modèles étudiés étaient :
-</p>
-<ul>
-<li>7G TRONIC</li>
-<li>9G TRONIC</li>
-<li>DQ200</li>
-<li>DQ250</li>
-<li>DQ380 / DQ381</li>
-<li>Temic 722.8</li>
-<li>Multitronic V30</li>
-<li>Multitronic V300</li>
-<li>Multitronic VL381</li>
-</ul>
-<p>
-    Les boîtes Multitronic V30 et V300 constituent une exception,
-    car elles ne communiquent pas en CAN mais utilisent le protocole
-    K-Line. Nous ne disposions cependant pas du matériel nécessaire
-    pour dialoguer avec ces systèmes.
-</p>
-</section>
-<section>
-<h2>
-    Méthode de recherche des informations
-</h2>
-<p>
-    L'objectif de cette mission était d'identifier les trames
-    correspondant aux demandes d'informations provenant des capteurs
-    présents dans les boîtes de vitesses.
-</p>
-<p>
-    Ces informations peuvent être obtenues grâce à une valise
-    de diagnostic automobile. Lorsqu'une information sur un capteur
-    est demandée, la valise envoie une requête contenant une trame
-    spécifique.
-</p>
-<p>
-    En analysant ces échanges, il est possible d'identifier
-    les différentes trames associées aux informations recherchées.
-</p>
-</section>
-<section>
-<h2>
-    Analyse avec les outils CAN
-</h2>
-<p>
-    Pour analyser les communications, j'ai utilisé un sniffer CAN.
-</p>
-<p>
-    L'entreprise utilise notamment les outils PCAN-View et PCAN-Trace
-    permettant d'observer les trames circulant sur un réseau CAN,
-    mais également d'envoyer manuellement des trames afin de réaliser
-    différents tests.
-</p>
-<p>
-    Après avoir identifié les trames intéressantes grâce à la valise
-    de diagnostic, j'ai effectué des essais sans celle-ci afin de
-    vérifier que les informations relevées étaient correctes.
-</p>
-</section>
-<section>
-<h2>
-    Intégration dans le logiciel de test
-</h2>
-<p>
-    Une fois les trames identifiées et validées, elles ont été
-    intégrées dans le logiciel utilisé par l'entreprise afin
-    d'automatiser les tests.
-</p>
-<p>
-    Cette étape permet ensuite de réaliser les contrôles plus rapidement
-    et de manière reproductible.
-</p>
-</section>
-<section>
-<h2>
-    Découverte de la vie en entreprise
-</h2>
-<p>
-    Après mon premier jour dans l'entreprise, le patron ainsi que
-    deux employés m'ont invité dans un petit bar-restaurant situé
-    en hauteur dans les montagnes.
-</p>
-<p>
-    Ce moment a été une première découverte de la culture locale.
-    Nous avons pu profiter d'une très belle vue avec un coucher
-    de soleil sur l'horizon.
-</p>
-<p>
-    Durant la semaine, j'ai également été invité à manger avec mes
-    collègues dans un restaurant ouvrier.
-</p>
-<p>
-    J'ai pu remarquer une habitude locale : chaque jeudi,
-    les employés se rendent dans ce restaurant car il propose
-    notamment des gnocchis.
-</p>
-</section>
-<section>
-<h2>
-    Mes premières observations sur l'Italie
-</h2>
-<p>
-    Cette première semaine m'a permis d'observer plusieurs différences
-    avec la France.
-</p>
-<ul>
-<li>
-    Une relation au travail plus détendue avec moins de stress
-    concernant les délais.
-</li>
-<li>
-    Une forte utilisation de la climatisation dans les logements
-    et les véhicules.
-</li>
-<li>
-    Une organisation parfois moins rigoureuse qu'en France,
-    notamment concernant certains échanges administratifs.
-</li>
-</ul>
-</section>
+    <section>
+        <h2>
+            Première mission : décodage des trames CAN
+        </h2>
+        <p>
+            Du 06/06/2026 au 23/06/2026, j'ai travaillé sur le décodage
+            des trames de communication de plusieurs boîtes de vitesses
+            automatiques.
+        </p>
+        <p>
+            Les modèles étudiés étaient :
+        </p>
+        <ul>
+        <li>7G TRONIC</li>
+        <li>9G TRONIC</li>
+        <li>DQ200</li>
+        <li>DQ250</li>
+        <li>DQ380 / DQ381</li>
+        <li>Temic 722.8</li>
+        <li>Multitronic V30</li>
+        <li>Multitronic V300</li>
+        <li>Multitronic VL381</li>
+        </ul>
+        <p>
+            Les boîtes Multitronic V30 et V300 constituent une exception,
+            car elles ne communiquent pas en CAN mais utilisent le protocole
+            K-Line. Nous ne disposions cependant pas du matériel nécessaire
+            pour dialoguer avec ces systèmes.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Méthode de recherche des informations
+        </h2>
+        <p>
+            L'objectif de cette mission était d'identifier les trames
+            correspondant aux demandes d'informations provenant des capteurs
+            présents dans les boîtes de vitesses.
+        </p>
+        <p>
+            Ces informations peuvent être obtenues grâce à une valise
+            de diagnostic automobile. Lorsqu'une information sur un capteur
+            est demandée, la valise envoie une requête contenant une trame
+            spécifique.
+        </p>
+        <p>
+            En analysant ces échanges, il est possible d'identifier
+            les différentes trames associées aux informations recherchées.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Analyse avec les outils CAN
+        </h2>
+        <p>
+            Pour analyser les communications, j'ai utilisé un sniffer CAN.
+        </p>
+        <p>
+            L'entreprise utilise notamment les outils PCAN-View et PCAN-Trace
+            permettant d'observer les trames circulant sur un réseau CAN,
+            mais également d'envoyer manuellement des trames afin de réaliser
+            différents tests.
+        </p>
+        <p>
+            Après avoir identifié les trames intéressantes grâce à la valise
+            de diagnostic, j'ai effectué des essais sans celle-ci afin de
+            vérifier que les informations relevées étaient correctes.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Intégration dans le logiciel de test
+        </h2>
+        <p>
+            Une fois les trames identifiées et validées, elles ont été
+            intégrées dans le logiciel utilisé par l'entreprise afin
+            d'automatiser les tests.
+        </p>
+        <p>
+            Cette étape permet ensuite de réaliser les contrôles plus rapidement
+            et de manière reproductible.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Découverte de la vie en entreprise
+        </h2>
+        <p>
+            Après mon premier jour dans l'entreprise, le patron ainsi que
+            deux employés m'ont invité dans un petit bar-restaurant situé
+            en hauteur dans les montagnes.
+        </p>
+        <p>
+            Ce moment a été une première découverte de la culture locale.
+            Nous avons pu profiter d'une très belle vue avec un coucher
+            de soleil sur l'horizon.
+        </p>
+        <p>
+            Durant la semaine, j'ai également été invité à manger avec mes
+            collègues dans un restaurant ouvrier.
+        </p>
+        <p>
+            J'ai pu remarquer une habitude locale : chaque jeudi,
+            les employés se rendent dans ce restaurant car il propose
+            notamment des gnocchis.
+        </p>
+    </section>
+    <section>
+        <h2>
+            Mes premières observations sur l'Italie
+        </h2>
+        <p>
+            Cette première semaine m'a permis d'observer plusieurs différences
+            avec la France.
+        </p>
+        <ul>
+        <li>
+            Une relation au travail plus détendue avec moins de stress
+            concernant les délais.
+        </li>
+        <li>
+            Une forte utilisation de la climatisation dans les logements
+            et les véhicules.
+        </li>
+        <li>
+            Une organisation parfois moins rigoureuse qu'en France,
+            notamment concernant certains échanges administratifs.
+        </li>
+        </ul>
+    </section>
 </main>
+<section class="navigation-pages">
+    <a href="preparation.html">
+        ← Préparation
+    </a>
+    <a href="index.html">
+        Accueil
+    </a>
+</section>
 <footer>
-<p>
-EPI International - Italie 2026 - Félix Bitaudeau
-</p>
+    <p>
+        EPI International - Italie 2026 - Félix Bitaudeau
+    </p>
 </footer>
 </body>
 </html>
