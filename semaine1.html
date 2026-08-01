@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaines 1 & 2 - Expérience en Italie 🇮🇹</title>
+    <title>Semaine 1 - Expérience en Italie 🇮🇹</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,59 +12,64 @@
         <div class="header-container">
             <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
             <div class="header-text">
-                <h1>Semaines 1 & 2 🇮🇹</h1>
-                <p>Décodage du réseau CAN & Intégration dans l'équipe</p>
+                <h1>Semaine 1 🇮🇹</h1>
+                <p>Prise en main des calculateurs & Décodage des trames CAN</p>
             </div>
         </div>
         <nav>
             <a href="index.html">Accueil</a>
             <a href="preparation.html">Préparation</a>
-            <a href="semaine1.html">Semaine 1 & 2</a>
-            <a href="semaine3.html">Semaine 3</a>
-            <a href="semaine4.html">Semaine 4</a>
+            <a href="semaines.html">Les Semaines</a>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Mission technique : Decodage des trames CAN</h2>
+            <h2>Première mission : Décodage des trames CAN</h2>
             <p>
-                Du <strong>06/06/2026 au 23/06/2026</strong>, ma mission principale a été d'identifier et de décoder les trames de communication issues de diverses calculateurs de boîtes de vitesses automatiques.
+                Durant cette première semaine chez GRMtronics, j'ai débuté mon travail sur le décodage des trames de communication de plusieurs calculateurs de boîtes de vitesses automatiques.
             </p>
-            <p><strong>Modèles étudiés :</strong></p>
+            <p><strong>Modèles de boîtes étudiés :</strong></p>
             <ul>
                 <li><strong>Mercedes-Benz :</strong> 7G-TRONIC, 9G-TRONIC</li>
-                <li><strong>Groupe VAG (Audi/VW/Skoda) :</strong> DQ200, DQ250, DQ380 / DQ381</li>
-                <li><strong>Autre :</strong> Temic 722.8, Multitronic VL381</li>
+                <li><strong>Groupe VAG :</strong> DQ200, DQ250, DQ380 / DQ381</li>
+                <li><strong>Autres :</strong> Temic 722.8, Multitronic VL381</li>
             </ul>
         </section>
 
         <section>
-            <h2>Méthodologie de Reverse-Engineering CAN</h2>
+            <h2>Méthodologie de reverse-engineering</h2>
             <p>
-                L'objectif était de capturer les trames associées aux requêtes d'information des capteurs de boîte :
+                L'objectif est d'identifier les trames CAN correspondant aux demandes d'informations provenant des différents capteurs internes.
             </p>
-            <ol style="margin-left: 25px; margin-bottom: 15px;">
-                <li><strong>Capture initiale :</strong> Utilisation d'une valise de diagnostic automobile. Lors de l'interrogation d'un capteur, la valise génère une trame spécifique sur le bus.</li>
-                <li><strong>Analyse Sniffer :</strong> Utilisation des outils <strong>PCAN-View</strong> et <strong>PCAN-Trace</strong> pour espionner le réseau et isoler les ID de trames pertinents.</li>
-                <li><strong>Validation :</strong> Envoi manuel des trames isolées via PCAN-View (sans la valise) pour vérifier que le calculateur répond correctement.</li>
-                <li><strong>Intégration :</strong> Implémentation des trames validées dans le logiciel de banc de test interne à l'entreprise pour automatiser les contrôles.</li>
-            </ol>
+            <p>
+                Pour cela, j'utilise une <strong>valise de diagnostic automobile</strong>. Lors d'une demande d'information sur un capteur, la valise émet une trame spécifique. En espionnant le bus à l'aide d'un sniffer CAN, il devient possible d'isoler l'ID et les octets de données associés.
+            </p>
         </section>
 
         <section>
-            <h2>Vie d'entreprise & Culture locale</h2>
+            <h2>Utilisation des outils PCAN</h2>
             <p>
-                Dès le premier jour, le patron et deux collègues m'ont invité dans un restaurant niché dans les montagnes surplombant la région, offrant un coucher de soleil magnifique sur la vallée.
+                Pour procéder à l'analyse et à la validation des trames, j'ai utilisé la suite logicielle PCAN :
             </p>
+            <ul>
+                <li><strong>PCAN-View & PCAN-Trace :</strong> Observation des trames circulant sur le réseau et émission manuelle de trames de test.</li>
+                <li><strong>Validation :</strong> Envoi des trames sans la valise de diagnostic pour valider la réponse du calculateur.</li>
+                <li><strong>Intégration :</strong> Implémentation dans le logiciel interne de l'entreprise pour automatiser les bancs d'essais.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Premières sorties entre collègues</h2>
             <p>
-                J'ai également rapidement adopté la tradition du <strong>"Jeudi Gnocchi"</strong> : chaque jeudi, toute l'équipe se retrouve dans un restaurant ouvrier local qui sert leurs fameux gnocchis (par contre, leur pain laisse franchement à désirer !).
+                Dès le premier soir après le travail, le patron et deux employés m'ont invité dans un bar-restaurant situé sur les hauteurs environnantes. Nous avons pu profiter d'un magnifique coucher de soleil sur la région.
             </p>
         </section>
 
         <div class="navigation-pages">
             <a href="preparation.html">← Préparation</a>
-            <a href="semaine3.html">Semaine 3 →</a>
+            <a href="semaines.html">Liste des semaines</a>
+            <a href="semaine2.html">Semaine 2 →</a>
         </div>
     </main>
 
