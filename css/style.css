@@ -328,3 +328,11 @@ section h2{
 }
 
 }
+/* Animation de remontée au survol pour les sections d'aperçu */
+section.interactive-section {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+section.interactive-section:hover {
+    transform: translateY(-6px);
+}
