@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie Photos - Expérience en Italie 🇮🇹</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Style pour la visionneuse photo (Lightbox) */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.85);
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .lightbox-modal img {
+            max-width: 90%;
+            max-height: 85%;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.5);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
+            <div class="header-text">
+                <h1>Galerie Photos 📸</h1>
+                <p>Retrouvez l'ensemble des souvenirs de ma mobilité en Italie</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="preparation.html">Préparation</a>
+            <a href="semaines.html">Les Semaines</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>📸 Photos du séjour</h2>
+            <p>Cliquez sur n'importe quelle image pour l'agrandir.</p>
+
+            <div class="gallery">
+                <img src="img/photo1.jpg" alt="Photo 1" onclick="openLightbox(this.src)">
+                <img src="img/photo2.jpg" alt="Photo 2" onclick="openLightbox(this.src)">
+                <img src="img/photo3.jpg" alt="Photo 3" onclick="openLightbox(this.src)">
+                <img src="img/photo4.jpg" alt="Photo 4" onclick="openLightbox(this.src)">
+                <img src="img/photo5.jpg" alt="Photo 5" onclick="openLightbox(this.src)">
+                <img src="img/photo6.jpg" alt="Photo 6" onclick="openLightbox(this.src)">
+            </div>
+        </section>
+
+        <div class="navigation-pages" style="justify-content: center;">
+            <a href="index.html">← Retour à l'accueil</a>
+        </div>
+    </main>
+
+    <!-- Modal pour le zoom d'image -->
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Image agrandie">
+    </div>
+
+    <footer>
+        <p>EPI International - Italie 2026 — Félix Bitaudeau</p>
+    </footer>
+
+    <!-- Script simple pour gérer le zoom -->
+    <script>
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
