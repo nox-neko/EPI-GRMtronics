@@ -1,169 +1,76 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaine 1 - Expérience en Italie</title>
+    <title>Semaines 1 & 2 - Expérience en Italie 🇮🇹</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <h1>
-       Semaine 1 🇮🇹
-    </h1>
-    <p>
-        Découverte de l'entreprise et première mission technique
-    </p>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="preparation.html">Préparation</a>
-        <a href="semaine1.html">Semaine 1</a>
-    </nav>
-</header>
-<main>
-    <section>
-        <h2>
-            Première mission : décodage des trames CAN
-        </h2>
-        <p>
-            Du 06/06/2026 au 23/06/2026, j'ai travaillé sur le décodage
-            des trames de communication de plusieurs boîtes de vitesses
-            automatiques.
-        </p>
-        <p>
-            Les modèles étudiés étaient :
-        </p>
-        <ul>
-        <li>7G TRONIC</li>
-        <li>9G TRONIC</li>
-        <li>DQ200</li>
-        <li>DQ250</li>
-        <li>DQ380 / DQ381</li>
-        <li>Temic 722.8</li>
-        <li>Multitronic V30</li>
-        <li>Multitronic V300</li>
-        <li>Multitronic VL381</li>
-        </ul>
-        <p>
-            Les boîtes Multitronic V30 et V300 constituent une exception,
-            car elles ne communiquent pas en CAN mais utilisent le protocole
-            K-Line. Nous ne disposions cependant pas du matériel nécessaire
-            pour dialoguer avec ces systèmes.
-        </p>
-    </section>
-    <section>
-        <h2>
-            Méthode de recherche des informations
-        </h2>
-        <p>
-            L'objectif de cette mission était d'identifier les trames
-            correspondant aux demandes d'informations provenant des capteurs
-            présents dans les boîtes de vitesses.
-        </p>
-        <p>
-            Ces informations peuvent être obtenues grâce à une valise
-            de diagnostic automobile. Lorsqu'une information sur un capteur
-            est demandée, la valise envoie une requête contenant une trame
-            spécifique.
-        </p>
-        <p>
-            En analysant ces échanges, il est possible d'identifier
-            les différentes trames associées aux informations recherchées.
-        </p>
-    </section>
-    <section>
-        <h2>
-            Analyse avec les outils CAN
-        </h2>
-        <p>
-            Pour analyser les communications, j'ai utilisé un sniffer CAN.
-        </p>
-        <p>
-            L'entreprise utilise notamment les outils PCAN-View et PCAN-Trace
-            permettant d'observer les trames circulant sur un réseau CAN,
-            mais également d'envoyer manuellement des trames afin de réaliser
-            différents tests.
-        </p>
-        <p>
-            Après avoir identifié les trames intéressantes grâce à la valise
-            de diagnostic, j'ai effectué des essais sans celle-ci afin de
-            vérifier que les informations relevées étaient correctes.
-        </p>
-    </section>
-    <section>
-        <h2>
-            Intégration dans le logiciel de test
-        </h2>
-        <p>
-            Une fois les trames identifiées et validées, elles ont été
-            intégrées dans le logiciel utilisé par l'entreprise afin
-            d'automatiser les tests.
-        </p>
-        <p>
-            Cette étape permet ensuite de réaliser les contrôles plus rapidement
-            et de manière reproductible.
-        </p>
-    </section>
-    <section>
-        <h2>
-            Découverte de la vie en entreprise
-        </h2>
-        <p>
-            Après mon premier jour dans l'entreprise, le patron ainsi que
-            deux employés m'ont invité dans un petit bar-restaurant situé
-            en hauteur dans les montagnes.
-        </p>
-        <p>
-            Ce moment a été une première découverte de la culture locale.
-            Nous avons pu profiter d'une très belle vue avec un coucher
-            de soleil sur l'horizon.
-        </p>
-        <p>
-            Durant la semaine, j'ai également été invité à manger avec mes
-            collègues dans un restaurant ouvrier.
-        </p>
-        <p>
-            J'ai pu remarquer une habitude locale : chaque jeudi,
-            les employés se rendent dans ce restaurant car il propose
-            notamment des gnocchis.
-        </p>
-    </section>
-    <section>
-        <h2>
-            Mes premières observations sur l'Italie
-        </h2>
-        <p>
-            Cette première semaine m'a permis d'observer plusieurs différences
-            avec la France.
-        </p>
-        <ul>
-        <li>
-            Une relation au travail plus détendue avec moins de stress
-            concernant les délais.
-        </li>
-        <li>
-            Une forte utilisation de la climatisation dans les logements
-            et les véhicules.
-        </li>
-        <li>
-            Une organisation parfois moins rigoureuse qu'en France,
-            notamment concernant certains échanges administratifs.
-        </li>
-        </ul>
-    </section>
-</main>
-<section class="navigation-pages">
-    <a href="preparation.html">
-        ← Préparation
-    </a>
-    <a href="index.html">
-        Accueil
-    </a>
-</section>
-<footer>
-    <p>
-        EPI International - Italie 2026 - Félix Bitaudeau
-    </p>
-</footer>
+
+    <header>
+        <div class="header-container">
+            <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
+            <div class="header-text">
+                <h1>Semaines 1 & 2 🇮🇹</h1>
+                <p>Décodage du réseau CAN & Intégration dans l'équipe</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="preparation.html">Préparation</a>
+            <a href="semaine1.html">Semaine 1 & 2</a>
+            <a href="semaine3.html">Semaine 3</a>
+            <a href="semaine4.html">Semaine 4</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mission technique : Decodage des trames CAN</h2>
+            <p>
+                Du <strong>06/06/2026 au 23/06/2026</strong>, ma mission principale a été d'identifier et de décoder les trames de communication issues de diverses calculateurs de boîtes de vitesses automatiques.
+            </p>
+            <p><strong>Modèles étudiés :</strong></p>
+            <ul>
+                <li><strong>Mercedes-Benz :</strong> 7G-TRONIC, 9G-TRONIC</li>
+                <li><strong>Groupe VAG (Audi/VW/Skoda) :</strong> DQ200, DQ250, DQ380 / DQ381</li>
+                <li><strong>Autre :</strong> Temic 722.8, Multitronic VL381</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Méthodologie de Reverse-Engineering CAN</h2>
+            <p>
+                L'objectif était de capturer les trames associées aux requêtes d'information des capteurs de boîte :
+            </p>
+            <ol style="margin-left: 25px; margin-bottom: 15px;">
+                <li><strong>Capture initiale :</strong> Utilisation d'une valise de diagnostic automobile. Lors de l'interrogation d'un capteur, la valise génère une trame spécifique sur le bus.</li>
+                <li><strong>Analyse Sniffer :</strong> Utilisation des outils <strong>PCAN-View</strong> et <strong>PCAN-Trace</strong> pour espionner le réseau et isoler les ID de trames pertinents.</li>
+                <li><strong>Validation :</strong> Envoi manuel des trames isolées via PCAN-View (sans la valise) pour vérifier que le calculateur répond correctement.</li>
+                <li><strong>Intégration :</strong> Implémentation des trames validées dans le logiciel de banc de test interne à l'entreprise pour automatiser les contrôles.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Vie d'entreprise & Culture locale</h2>
+            <p>
+                Dès le premier jour, le patron et deux collègues m'ont invité dans un restaurant niché dans les montagnes surplombant la région, offrant un coucher de soleil magnifique sur la vallée.
+            </p>
+            <p>
+                J'ai également rapidement adopté la tradition du <strong>"Jeudi Gnocchi"</strong> : chaque jeudi, toute l'équipe se retrouve dans un restaurant ouvrier local qui sert leurs fameux gnocchis (par contre, leur pain laisse franchement à désirer !).
+            </p>
+        </section>
+
+        <div class="navigation-pages">
+            <a href="preparation.html">← Préparation</a>
+            <a href="semaine3.html">Semaine 3 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>EPI International - Italie 2026 — Félix Bitaudeau</p>
+    </footer>
+
 </body>
 </html>
