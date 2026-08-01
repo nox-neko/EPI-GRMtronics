@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaine 4 - Solénoïdes DQ250 & faits divers 🇮🇹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
+            <div class="header-text">
+                <h1>Semaine 4 🇮🇹</h1>
+                <p>Activation des actionneurs, sécurité calculateur et incendie local</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="preparation.html">Préparation</a>
+            <a href="semaine1.html">Semaine 1 & 2</a>
+            <a href="semaine3.html">Semaine 3</a>
+            <a href="semaine4.html">Semaine 4</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Activation des Solénoïdes (DQ250 / DQ380)</h2>
+            <p>
+                Cette semaine était consacrée à la tentative d'activation manuelle des actionneurs (électrovanes / solénoïdes) sur la boîte DQ250, une procédure à étendre à toutes les boîtes automatiques de l'atelier.
+            </p>
+            <p>
+                Pour feinter le calculateur sur le banc, j'ai dû simuler l'intégralité du véhicule en envoyant un flux continu de trames CAN "moteur".
+            </p>
+            <p><strong>Difficultés rencontrées :</strong></p>
+            <ul>
+                <li><strong>Fusibles :</strong> Durant les tests de puissance, j'ai réussi la prouesse de griller le même fusible 3 fois d'affilée !</li>
+                <li><strong>Mise en sécurité calculateur (DQ380/381) :</strong> Le calculateur refusait catégoriquement de changer l'état des solénoïdes. Analyse du problème : sans pression d'huile réelle (pression nulle sur le banc) et avec des trames CAN de simulation "statiques", le calculateur détecte une incohérence et se verrouille par sécurité.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Événement local : Incendie à Monterotondo</h2>
+            <p>
+                Le jeudi soir, après être rentré à l'appartement à 16h, nous avons entendu un balai aérien incessant. Le lendemain matin sur la route du travail, les traces de brûlé étaient visibles : un incendie s'était déclaré très proche des habitations et de la gare de Monterotondo (à peine 1 km de notre logement). Un hélicoptère bombardier d'eau a dû intervenir en urgence.
+            </p>
+        </section>
+
+        <div class="navigation-pages">
+            <a href="semaine3.html">← Semaine 3</a>
+            <a href="index.html">Accueil →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>EPI International - Italie 2026 — Félix Bitaudeau</p>
+    </footer>
+
+</body>
+</html>
