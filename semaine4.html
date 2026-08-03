@@ -29,14 +29,14 @@
         <section>
             <h2>Activation des Solénoïdes (DQ250 / DQ380)</h2>
             <p>
-                Cette semaine était consacrée à la tentative d'activation manuelle des actionneurs (électrovannes / solénoïdes) sur la boîte DQ250, une procédure à étendre à toutes les boîtes automatiques de l'atelier.
+                Cette semaine était en partie consacrée à la tentative d'activation manuelle des actionneurs (électrovannes / solénoïdes) sur la boîte DQ250, une procédure à étendre à toutes les boîtes automatiques de l'atelier.
             </p>
             <p>
-                Pour feinter le calculateur sur le banc, j'ai dû simuler l'intégralité du véhicule en envoyant un flux continu de trames CAN "moteur".
+                En essayant à vide les test actionneurs avec la valise diagnostique j'ai pu constater qu'il demandait un signe de vie du reste de la voiture, j'ai donc du essayé de simuler l'intégralité du véhicule en envoyant des données sur le CAN, comme par exemple : le moteur, la pédale d'accélération, la pédale de frein, la vitesse des roues et bien encore.
             </p>
             <p><strong>Difficultés rencontrées :</strong></p>
             <ul>
-                <li><strong>Fusibles :</strong> Durant les tests de puissance, j'ai réussi la prouesse de griller le même fusible 3 fois d'affilée !</li>
+                <li><strong>Fusibles :</strong> Durant les tests, j'ai réussi à griller le 2 fusibles !</li>
                 <li><strong>Mise en sécurité calculateur (DQ380/381) :</strong> Le calculateur refusait catégoriquement de changer l'état des solénoïdes. Analyse du problème : sans pression d'huile réelle (pression nulle sur le banc) et avec des trames CAN de simulation "statiques", le calculateur détecte une incohérence et se verrouille par sécurité.</li>
             </ul>
         </section>
@@ -44,14 +44,14 @@
         <section>
             <h2>Événement local : Incendie à Monterotondo</h2>
             <p>
-                Le jeudi soir, après être rentré à l'appartement à 16h, nous avons entendu un balai aérien incessant. Le lendemain matin sur la route du travail, les traces de brûlé étaient visibles : un incendie s'était déclaré très proche des habitations et de la gare de Monterotondo (à peine 1 km de notre logement). Un hélicoptère bombardier d'eau a dû intervenir en urgence.
+                Le jeudi soir, après être rentré à l'appartement à 16h, j'ai entendu ce qu'il me semblais des avions pendant un bon moment. Le lendemain matin sur la route du travail j'ai pu constater qu'il y avait eu un incendie qui était très proche des habitations et de la gare de Monterotondo (à peine 1 km de mon logement mais certaines maisons se sont retrouvés entourés par les flames). Je me suis un peut plus informé et j'ai su que le son d'avion qu'il y avais la veille était en réalité un hélicoptere bombardier d'eau. Heureusement l'incendie n'a fait aucune victime, mais un peut de matériel à été détruit.
             </p>
         </section>
 
         <div class="navigation-pages">
             <a href="semaine3.html">← Semaine 3</a>
             <a href="semaines.html">Liste des semaines</a>
-            <a href="index.html">Accueil →</a>
+            <a href="semaine5.html">Semaine 5 →</a>
         </div>
     </main>
 
