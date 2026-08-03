@@ -27,25 +27,25 @@
 
     <main>
         <section>
-            <h2>Travail sur le protocole FlexRay</h2>
-            <p>
-                Durant cette troisième semaine, j'ai basculé sur un protocole de communication haut débit plus complexe que le CAN : le <strong>FlexRay</strong>.
-            </p>
-            <p>
-                J'ai travaillé sur un banc d'essai comprenant un boîtier <strong>BDC (Body Domain Controller)</strong> et un bloc <strong>ABS</strong> provenant d'une <strong>BMW Série 1 (F20)</strong>. L'objectif était de comprendre la synchronisation de l'horloge et la structure des cycles déterministes du bus FlexRay.
-            </p>
-        </section>
-
-        <section>
             <h2>Spécificité : Les boîtes Multitronic V30 & V300</h2>
             <p>
                 En parallèle, j'ai dû analyser les boîtes de vitesses Audi Multitronic V30 et V300.
             </p>
             <p>
-                <strong>Constat technique :</strong> Contrairement aux autres calculateurs, ces modèles ne communiquent pas via le bus CAN. Les trames de diagnostic transitent directement par la ligne <strong>K-Line</strong> de la prise OBD. Ne disposant pas de l'interface matérielle adaptée pour converser en K-Line dans l'atelier, nous avons dû documenter cette limitation.
+                Constat technique : Contrairement aux autres calculateurs, ces modèles ne communiquent pas via le bus CAN. Les trames de diagnostic transitent directement par la ligne K-Line de la prise OBD. Malheureusement dû à l'absence d'outil et sur le banc de test de convertisseur K-Line nous avons mis ces boites de côté.
             </p>
         </section>
-
+        
+        <section>
+            <h2>Travail sur le protocole FlexRay</h2>
+            <p>
+                Durant cette troisième semaine, j'ai basculé sur un protocole de communication haut débit plus complexe que le CAN : le FlexRay.
+            </p>
+            <p>
+                J'ai travaillé sur un banc d'essai comprenant un boîtier BDC (Body Domain Controller) et un bloc ABS provenant d'une BMW Série 1 (F20). L'objectif était de réussir à communiquer avec l'ABS en passant par le FlexRay, cependant ça n'a abouti à rien car nous pensons qu'il manque un élément essenciel qui bloque l'initialisation de la communication FlexRay.
+            </p>
+        </section>
+        
         <div class="navigation-pages">
             <a href="semaine2.html">← Semaine 2</a>
             <a href="semaines.html">Liste des semaines</a>
