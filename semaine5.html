@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaine 5 - ? 🇮🇹</title>
+    <title>Semaine 5 - Expérience en Italie 🇮🇹</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
             <div class="header-text">
                 <h1>Semaine 5 🇮🇹</h1>
-                <p>?</p>
+                <p>Recherches approfondies sur le FlexRay & blocages techniques</p>
             </div>
         </div>
         <nav>
@@ -27,33 +27,35 @@
 
     <main>
         <section>
-            <h2>Continuité des recherches sur des solutions pour le FlexRay</h2>
+            <h2>Travail sur le bus FlexRay et tests CAN</h2>
             <p>
+                Le travail principal de cette cinquième semaine a été de poursuivre les recherches sur le réseau FlexRay. 
             </p>
-          
             <p>
+                Pendant un moment, j'ai pensé que le bloc ABS possédait une interface CAN, car j'avais mesuré une résistance de 120 Ω entre certaines broches. J'ai donc tenté de m'y connecter et d'envoyer des trames de diagnostic. Cependant, aucune communication n'a pu être établie : l'interface CAN renvoyait uniquement des erreurs par manque d'accusé de réception (ACK) de la part de l'ABS.
             </p>
-            <p><strong>Difficultés rencontrées :</strong></p>
-            <ul>
-                <li><strong>Fusibles :</strong> Durant les tests, j'ai réussi à griller le 2 fusibles !</li>
-                <li><strong>Mis???) :</strong> L??é.</li>
-            </ul>
         </section>
 
         <section>
-            <h2>Événement local : Incendie à Monterotondo</h2>
+            <h2>Câblage avec les modules ICM / FEM et cartographie des broches</h2>
             <p>
-                Le jeudi soir, après être rentré à l'appartement à 16h, j'ai entendu ce qu'il me semblais des avions pendant un bon moment. Le lendemain matin sur la route du travail j'ai pu constater qu'il y avait eu un incendie qui était très proche des habitations et de la gare de Monterotondo (à peine 1 km de mon logement mais certaines maisons se sont retrouvés entourés par les flames). Je me suis un peut plus informé et j'ai su que le son d'avion qu'il y avais la veille était en réalité un hélicoptere bombardier d'eau. Heureusement l'incendie n'a fait aucune victime, mais un peut de matériel à été détruit.
+                Suite à cet essai, je suis repassé sur le protocole FlexRay en recherchant le bon câblage avec un module ICM (Integrated Chassis Management) et le FEM (Front Electronics Module). Lors de mes premiers essais, j'avais réussi à dialoguer avec le FEM, mais l'initialisation du réseau FlexRay vers l'ABS restait impossible.
             </p>
             <p>
-                L'incendi à été éteint rapidement le soir même, mais le lendemain vers 16h00 il a repris mais les pompier et la sécurité civile ont été très efficace en moins de 30 minutes tout était revenu à la normale.
+                Pour avancer, j'ai tenté la démarche sur un autre bloc ABS similaire en mesurant au préalable, à l'aide d'un ohmmètre, la résistance entre toutes les broches pour localiser les résistances de terminaison internes.
             </p>
+            <p><strong>Bilan technique et difficultés :</strong></p>
+            <ul>
+                <li><strong>Communication CAN / FEM :</strong> Le dialogue sur le bus CAN avec le FEM fonctionne parfaitement, mais ce dernier n'initialise toujours pas le réseau FlexRay.</li>
+                <li><strong>Incohérence des schémas :</strong> Les schémas électriques trouvés en ligne ne correspondent pas au câblage réel de nos modules, malgré une référence de pièce strictement identique.</li>
+                <li><strong>Actionneurs DQ :</strong> En parallèle, les recherches pour activer les solénoïdes sans verrouillage du calculateur n'ont pas encore donné de résultat concluant.</li>
+            </ul>
         </section>
 
         <div class="navigation-pages">
-            <a href="semaine4.html">← Semaine 3</a>
+            <a href="semaine4.html">← Semaine 4</a>
             <a href="semaines.html">Liste des semaines</a>
-            <a href="#" style="opacity: 0.5; pointer-events: none;">Bientôt disponible</a>
+            <a href="semaine6.html">Semaine 6 →</a>
         </div>
     </main>
 
