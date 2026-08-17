@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaine 6 - Expérience en Italie 🇮🇹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
+            <div class="header-text">
+                <h1>Semaine 6 🇮🇹</h1>
+                <p>Analyse des blocs ABS CAN & Capteurs de vitesse de roues</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="preparation.html">Préparation</a>
+            <a href="semaines.html">Les Semaines</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Transition vers le décodage des blocs ABS</h2>
+            <p>
+                Au cours de cette sixième semaine, j'ai poursuivi les essais sur le FlexRay jusqu'à mardi après-midi avant de réorienter mes activités. J'ai ensuite basculé sur la recherche des trames CAN spécifiques aux blocs ABS (pour les modèles fonctionnant sur bus CAN traditionnel).
+            </p>
+            <p>
+                L'objectif était d'utiliser la même méthodologie de reverse-engineering que pour les boîtes de vitesses automatiques afin d'isoler les trames transmettant les informations de vitesse des capteurs de roues, déjà simulées par le banc d'essais de l'entreprise.
+            </p>
+        </section>
+
+        <section>
+            <h2>Modèles de calculateurs ABS évalués</h2>
+            <p>
+                J'ai pu effectuer des sessions d'espionnage et de tests de trames CAN sur plusieurs calculateurs ABS :
+            </p>
+            <ul>
+                <li><strong>Lancia Ypsilon :</strong> Analyse des trames CAN et isolation des identifiants liés aux vitesses de roues.</li>
+                <li><strong>Opel Astra J :</strong> Acquisition et validation des trames de vitesse de roues.</li>
+                <li><strong>Renault Twingo III / Smart 453 :</strong> Essais d'identification sur architecture commune Daimler-Renault.</li>
+            </ul>
+        </section>
+
+        <div class="navigation-pages">
+            <a href="semaine5.html">← Semaine 5</a>
+            <a href="semaines.html">Liste des semaines</a>
+            <a href="#" style="opacity: 0.5; pointer-events: none;">Bientôt disponible</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>EPI International - Italie 2026 — Félix Bitaudeau</p>
+    </footer>
+
+</body>
+</html>
