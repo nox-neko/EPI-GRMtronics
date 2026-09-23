@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaine 10 - Défaut banc d'essai & ABS KTM 🇮🇹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
+            <div class="header-text">
+                <h1>Semaine 10 🇮🇹</h1>
+                <p>Résolution de défauts sur banc, ABS KTM et baisse des températures</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="preparation.html">Préparation</a>
+            <a href="semaines.html">Les Semaines</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>tests ABS, contraintes matérielles et orage salvateur</h2>
+            <p>
+                J'ai remarqué en début de semaine qu'un défaut affectait le simulateur de vitesse de roue de mon banc d'essai. J'avais passé beaucoup de temps auparavant à chercher un moyen d'obtenir la vitesse de la roue avant gauche, alors que le problème provenait du banc lui-même.
+            </p>
+            <p>
+                Je poursuis le travail sur les ABS, rendu complexe par le manque de câbles adaptés pour progresser rapidement. Je dois recâbler chaque ABS à chaque test, et nous ne disposons que de deux câbles — dont un très peu pratique, aux cosses trop petites pour la plupart des ABS — alors que nous sommes trois à en avoir besoin.
+            </p>
+            <p>
+                J'ai travaillé sur un ABS de KTM pour tenter d'actionner la pompe, disposant de cet équipement pendant deux heures, sans succès malheureusement. La commande des composants pour le FlexRay a enfin été validée ; il ne reste plus qu'à attendre leur livraison.
+            </p>
+            <p>
+                Jeudi 10/09, un exploit s'est produit : les températures ont baissé. C'est le premier jour sans dépasser les 33 °C, le thermomètre affichant seulement 26 °C grâce à un violent orage qui a duré une grande partie de la journée. Durant mon séjour, les températures ont atteint jusqu'à 42 °C, avec des nuits ne descendant pas en dessous de 26 °C. J'ai testé d'autres ABS, mais l'extraction des informations de vitesse de roue s'avère très complexe sur certains modèles.
+            </p>
+        </section>
+
+        <div class="navigation-pages">
+            <a href="semaine9.html">← Semaine 9</a>
+            <a href="semaines.html">Liste des semaines</a>
+            <a href="semaine11.html">Semaine 11 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>EPI International - Italie 2026 — Félix Bitaudeau</p>
+    </footer>
+
+</body>
+</html>
