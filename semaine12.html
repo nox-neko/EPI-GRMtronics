@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaine 12 - Fin de stage & EEPROM ABS 🇮🇹</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
+            <div class="header-text">
+                <h1>Semaine 12 🇮🇹</h1>
+                <p>Clôture du stage EPI, code défaut EEPROM et pompes d'ABS</p>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="preparation.html">Préparation</a>
+            <a href="semaines.html">Les Semaines</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="conclusion.html">Conclusion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Clôture du séjour et investigations sur EEPROM</h2>
+            <p>
+                L'approche de la fin de mon séjour EPI se traduit par une baisse de charge de travail. Le lundi après-midi, je me suis retrouvé à solliciter des tâches supplémentaires, ayant achevé le test des 56 ABS à ma disposition ainsi que celui des boîtes de vitesses automatiques, terminé depuis un bon moment déjà.
+            </p>
+            <p>
+                J'ai alors aidé mon responsable à chercher une méthode pour effacer le code défaut C123EF0. Ce code apparaît lorsqu'une pompe de freinage défectueuse est remplacée à plusieurs reprises par la pompe de l'ABS ; au bout d'un certain nombre d'occurrences, ce code surgit et bloque l'ABS de manière définitive. Il ne peut être effacé par une valise de diagnostic et nécessite une écriture directe dans l'EEPROM, une opération délicate. La difficulté majeure réside dans l'identification de l'emplacement exact à modifier, puisqu'il s'agit généralement de modifier 24 octets dans un fichier de 32 768 octets.
+            </p>
+            <p>
+                N'ayant plus grand-chose à faire, j'ai prêté main-forte sur le banc de test des boîtes de vitesses automatiques, avant qu'on ne me confie des recherches sur l'activation des pompes d'ABS en vue de tests futurs.
+            </p>
+        </section>
+
+        <div class="navigation-pages">
+            <a href="semaine11.html">← Semaine 11</a>
+            <a href="semaines.html">Liste des semaines</a>
+            <a href="#" style="opacity: 0.5; pointer-events: none;">Bientôt disponible</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>EPI International - Italie 2026 — Félix Bitaudeau</p>
+    </footer>
+
+</body>
+</html>
