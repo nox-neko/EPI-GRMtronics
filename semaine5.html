@@ -1,7 +1,9 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semaine 5 - Expérience en Italie 🇮🇹</title>
+    <title>Semaine 5 - Recherche FlexRay & ABS 🇮🇹</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -11,7 +13,7 @@
             <img src="img/logo_grmtronicsR.png" alt="Logo GRMtronics" class="logo">
             <div class="header-text">
                 <h1>Semaine 5 🇮🇹</h1>
-                <p>Recherches approfondies sur le FlexRay & blocages techniques</p>
+                <p>Recherches sur le FlexRay, tests sur les ABS et activation des solénoïdes</p>
             </div>
         </div>
         <nav>
@@ -25,28 +27,17 @@
 
     <main>
         <section>
-            <h2>Travail sur le bus FlexRay et tests CAN</h2>
+            <h2>Recherches approfondies sur le FlexRay et les ABS</h2>
             <p>
-                Le travail principal de cette cinquième semaine a été de poursuivre les recherches sur le réseau FlexRay. 
+                Cette semaine a été principalement consacrée à la poursuite des recherches sur le protocole FlexRay.
             </p>
             <p>
-                Pendant un moment, j'ai pensé que le bloc ABS possédait une interface CAN, car j'avais mesuré une résistance de 120 Ω entre certaines broches. J'ai donc tenté de m'y connecter et d'envoyer des trames de diagnostic. Cependant, aucune communication n'a pu être établie : l'interface CAN renvoyait uniquement des erreurs par manque d'accusé de réception (ACK) de la part de l'ABS.
+                Pendant un moment, je pensais que l'ABS possédait une interface CAN car j'y avais trouvé des broches affichant une résistance de 120 ohms. J'ai donc essayé de m'y connecter et d'envoyer des trames de diagnostic, mais rien ne s'est passé à part des erreurs émanant de l'interface CAN, faute de réception d'un ACK (accusé de réception) de la part de l'ABS. Je suis par conséquent retourné travailler sur le FlexRay et à chercher comment effectuer le câblage, cette fois-ci avec un ICM et le FEM. Je l'avais déjà réalisé au début et j'avais réussi à dialoguer avec le FEM, mais malheureusement je n'avais pas réussi à amorcer le dialogue avec l'ABS. Je tente désormais l'opération avec un autre ABS similaire : j'ai testé au ohmmètre toutes les broches de l'ABS entre elles afin d'identifier celles dotées de résistances de terminaison.
             </p>
-        </section>
-
-        <section>
-            <h2>Câblage avec les modules ICM / FEM et cartographie des broches</h2>
-            <p>
-                Suite à cet essai, je suis repassé sur le protocole FlexRay en recherchant le bon câblage avec un module ICM (Integrated Chassis Management) et le FEM (Front Electronics Module). Lors de mes premiers essais, j'avais réussi à dialoguer avec le FEM, mais l'initialisation du réseau FlexRay vers l'ABS restait impossible.
-            </p>
-            <p>
-                Pour avancer, j'ai tenté la démarche sur un autre bloc ABS similaire en mesurant au préalable, à l'aide d'un ohmmètre, la résistance entre toutes les broches pour localiser les résistances de terminaison internes.
-            </p>
-            <p><strong>Bilan technique et difficultés :</strong></p>
+            <p><strong>Avancements et difficultés :</strong></p>
             <ul>
-                <li><strong>Communication CAN / FEM :</strong> Le dialogue sur le bus CAN avec le FEM fonctionne parfaitement, mais ce dernier n'initialise toujours pas le réseau FlexRay.</li>
-                <li><strong>Incohérence des schémas :</strong> Les schémas électriques trouvés en ligne ne correspondent pas au câblage réel de nos modules, malgré une référence de pièce strictement identique.</li>
-                <li><strong>Actionneurs DQ :</strong> En parallèle, les recherches pour activer les solénoïdes sans verrouillage du calculateur n'ont pas encore donné de résultat concluant.</li>
+                <li><strong>Communication FEM / FlexRay :</strong> Je réussis à communiquer avec le FEM par l'intermédiaire du bus CAN, mais ce dernier ne parvient toujours pas à initialiser le réseau FlexRay. Je suppose que je n'utilise pas les bonnes broches du côté du FEM, les schémas disponibles n'étant pas corrects malgré une référence identique.</li>
+                <li><strong>Solénoïdes :</strong> Je poursuis également mes recherches pour trouver le moyen d'activer les solénoïdes, sans résultats concluants pour le moment.</li>
             </ul>
         </section>
 
